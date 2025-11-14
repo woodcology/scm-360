@@ -2,35 +2,142 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Santa Cruz Mountains 360 Viewer</title>
+  <title>Santa Cruz Mountains Long-Term Forest Monitoring – 360 Views</title>
 
   <link rel="stylesheet" href="pannellum.css"/>
   <script src="pannellum.js"></script>
 
   <style>
-    html, body { margin: 0; height: 100%; }
-    #panorama {
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.5;
+    }
+
+    .page-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .intro {
+      margin-bottom: 2rem;
+      font-size: 0.98rem;
+    }
+
+    .site-block {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .site-title {
+      margin: 0 0 0.25rem;
+      font-size: 1.2rem;
+    }
+
+    .site-meta {
+      margin: 0 0 0.75rem;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .site-desc {
+      margin: 0 0 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .pano-frame {
       width: 100%;
-      height: 100vh;
+      height: 420px; /* adjust height to taste */
+      border-radius: 6px;
+      overflow: hidden;
       background: #000;
+      margin-top: 0.75rem;
+    }
+
+    .pano-inner {
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 
 <body>
-  <div id="panorama"></div>
+  <div class="page-wrap">
+    <h1>Santa Cruz Mountains Long-Term Forest Monitoring – 360° Plot Views</h1>
+    <p class="intro">
+      Interactive 360° panoramas from permanent monitoring plots in the Santa Cruz Mountains.
+      Click and drag to look around; use your mouse wheel or trackpad to zoom in and out.
+    </p>
+
+    <!-- ========== SITE 1 ========== -->
+    <section class="site-block">
+      <h2 class="site-title">BB Plot 01 – Example Site</h2>
+      <p class="site-meta">Big Basin – Coast redwood forest</p>
+      <p class="site-desc">
+        Example description for this plot. You can mention treatment history, fire severity,
+        stand structure, or anything else you want visitors to notice in the panorama.
+      </p>
+
+      <div class="pano-frame">
+        <div id="pano-bb01" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== SITE 2 ========== -->
+    <section class="site-block">
+      <h2 class="site-title">BB Plot 10 – Example Site</h2>
+      <p class="site-meta">Big Basin – Postfire monitoring plot</p>
+      <p class="site-desc">
+        Second example plot. Add a brief narrative about what’s interesting here (e.g.,
+        regeneration patterns, fuels, mortality, or treatment comparisons).
+      </p>
+
+      <div class="pano-frame">
+        <div id="pano-bb10" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- Add more <section class="site-block">…</section> blocks as needed -->
+
+  </div>
 
   <script>
-    pannellum.viewer('panorama', {
+    // Viewer 1 – BB Plot 01
+    pannellum.viewer('pano-bb01', {
       "type": "equirectangular",
-      "panorama": "BigBasin001.jpg",
+      "panorama": "BigBasin001.jpg"
       "autoLoad": true,
       "autoRotate": -2,
       "showZoomCtrl": true,
       "compass": true
     });
+
+    // Viewer 2 – BB Plot 10
+    pannellum.viewer('pano-bb10', {
+      "type": "equirectangular",
+      "panorama": "bb_plot10.jpg",   // <-- change to your actual filename
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    // To add more viewers:
+    // 1) Add another <section> with a new div id="pano-XYZ"
+    // 2) Add another pannellum.viewer('pano-XYZ', { ... }) block here
   </script>
 
 </body>
 </html>
-
