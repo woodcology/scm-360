@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Big Basin Redwoods State Park – Stewardship Research Area</title>
+
+  <!-- Main stylesheet reused from homepage (optional, or keep inline) -->
+  <link rel="stylesheet" href="pannellum.css">
+  <script src="pannellum.js"></script>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 1rem 0;
+      font-family: system-ui, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .page-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    h1 { margin-top: 0; }
+
+    .section {
+      background: #fff;
+      padding: 1.25rem 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border: 1px solid #e5e5e5;
+    }
+
+    #map {
+      width: 100%;
+      height: 450px;
+      border-radius: 6px;
+      margin-top: 0.75rem;
+    }
+
+    .pano-frame {
+      width: 100%;
+      height: 420px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #000;
+      margin-top: 0.75rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrap">
+
+    <h1>Big Basin Redwoods State Park</h1>
+    <p><a href="index.html">&larr; Back to Stewardship Research Areas</a></p>
+
+    <!-- Overview -->
+    <section class="section">
+      <h2>Overview</h2>
+      <p>
+        Big Basin contains 35 permanent forest monitoring plots distributed across 
+        second-growth coast redwood forests with remnant old-growth patches. 
+        The site experienced extensive high- and mixed-severity fire during the 2020 CZU Lightning Complex. 
+        Plots are stratified across a burn severity gradient to track regeneration, fuels, forest structure, 
+        and long-term ecological change.
+      </p>
+    </section>
+
+    <!-- Interactive map -->
+    <section class="section">
+      <h2>Plot Locations</h2>
+      <div id="map"></div>
+    </section>
+
+    <!-- Example panorama viewer -->
+    <section class="section">
+      <h2>Example 360° Plot Panorama</h2>
+      <p>This image provides a visual representation of typical conditions at one plot.</p>
+      <div class="pano-frame">
+        <div id="pano-bb" style="width:100%; height:100%;"></div>
+      </div>
+    </section>
+
+    <!-- Placeholder for data summary -->
+    <section class="section">
+      <h2>Data Summary (Coming Soon)</h2>
+      <p>
+        Plot-level summaries for regeneration, fuels loading, forest structure, and disturbance history 
+        will appear here as the monitoring database is developed.
+      </p>
+    </section>
+
+  </div>
+
+  <!-- LEAFLET MAP SCRIPT -->
+  <script>
+    const map = L.map('map').setView([37.198, -122.252], 14);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+
+    const plots = [
+      {name: "BB1", lat: 37.202489415, lon: -122.25358118833334},
+      {name: "BB10", lat: 37.195288945, lon: -122.25956996166666},
+      {name: "BB11", lat: 37.19708570375597, lon: -122.24238071799124},
+      {name: "BB12", lat: 37.19801656794056, lon: -122.24301275146432},
+      {name: "BB15", lat: 37.19466281, lon: -122.25074200166667},
+      {name: "BB16", lat: 37.197469701500005, lon: -122.25041281316665},
+      {name: "BB17", lat: 37.19995595500001, lon: -122.25560555666668},
+      {name: "BB19", lat: 37.19932606333333, lon: -122.24362967833333},
+      {name: "BB20", lat: 37.198767303333334, lon: -122.25585183749999},
+      {name: "BB21", lat: 37.19647239700001, lon: -122.25850220766667},
+      {name: "BB22", lat: 37.197801104999996, lon: -122.25027157499999},
+      {name: "BB23", lat: 37.19763300470956, lon: -122.24350928950734},
+      {name: "BB24", lat: 37.19304841833333, lon: -122.24526802666666},
+      {name: "BB25", lat: 37.20387077516666, lon: -122.25198882049999},
+      {name: "BB26", lat: 37.19581897, lon: -122.25043165333334},
+      {name: "BB27", lat: 37.20613923833333, lon: -122.24435374833335},
+      {name: "BB28", lat: 37.19534028566666, lon: -122.25038911600002},
+      {name: "BB29", lat: 37.201001228333325, lon: -122.25592759166666},
+      {name: "BB3", lat: 37.20109218533333, lon: -122.25650606416666},
+      {name: "BB30", lat: 37.19438074333333, lon: -122.24449449},
+      {name: "BB31", lat: 37.19465625033334, lon: -122.24941565466666},
+      {name: "BB32", lat: 37.19399511333333, lon: -122.26171554333331},
+      {name: "BB34", lat: 37.20583706666667, lon: -122.24638075666665},
+      {name: "BB35", lat: 37.200229093333334, lon: -122.25394329833335},
+      {name: "BB36", lat: 37.195204585000006, lon: -122.24554646000001},
+      {name: "BB37", lat: 37.19589317333333, lon: -122.25962985833334},
+      {name: "BB39", lat: 37.19506703766666, lon: -122.25831357950001},
+      {name: "BB4", lat: 37.20655930833333, lon: -122.24531024600002},
+      {name: "BB44", lat: 37.20346655166667, lon: -122.25882124500001},
+      {name: "BB45", lat: 37.202490833, lon: -122.25763489133332},
+      {name: "BB46", lat: 37.202912195, lon: -122.25857316833331},
+      {name: "BB47", lat: 37.202782211333336, lon: -122.25688653583333},
+      {name: "BB6", lat: 37.193974970666666, lon: -122.25879446683334},
+      {name: "BB7", lat: 37.194017235, lon: -122.26199408666668},
+      {name: "BB8", lat: 37.19443067333333, lon: -122.26219438833333},
+    ];
+
+    plots.forEach(p => {
+      L.marker([p.lat, p.lon]).addTo(map)
+        .bindPopup(`<strong>${p.name}</strong><br>Plot marker: TBD<br>Burn: TBD`);
+    });
+  </script>
+
+  <!-- PANORAMA SCRIPT -->
+  <script>
+    pannellum.viewer('pano-bb', {
+      type: "equirectangular",
+      panorama: "BigBasin001.jpg",
+      autoLoad: true,
+      autoRotate: -2,
+      showZoomCtrl: true,
+      compass: true
+    });
+  </script>
+
+</body>
+</html>
