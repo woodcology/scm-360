@@ -4,21 +4,33 @@
   <meta charset="utf-8">
   <title>Santa Cruz Mountains 360 Viewer</title>
 
-  <!-- For now we'll just test the page loads -->
+  <link rel="stylesheet" href="pannellum.css"/>
+  <script src="pannellum.js"></script>
+
   <style>
     html, body { margin: 0; height: 100%; }
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: sans-serif;
-      background: #111;
-      color: #eee;
+    #panorama {
+      width: 100%;
+      height: 100vh;
+      background: #000;
     }
   </style>
 </head>
 
 <body>
-  <h1>SCM 360 Viewer – GitHub Pages Test</h1>
+  <div id="panorama"></div>
+
+  <script>
+    pannellum.viewer('panorama', {
+      "type": "equirectangular",
+      "panorama": "BigBasin1.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+  </script>
+
 </body>
 </html>
+
