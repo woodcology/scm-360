@@ -24,13 +24,37 @@
 
     h1 {
       margin-top: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       font-size: 1.8rem;
     }
 
+    .subtitle {
+      margin: 0 0 0.75rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
     .intro {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       font-size: 0.98rem;
+    }
+
+    .jump-row {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+
+    .jump-row label {
+      font-weight: 600;
+    }
+
+    .jump-row select {
+      padding: 0.35rem 0.5rem;
+      font-size: 0.95rem;
     }
 
     .site-block {
@@ -76,47 +100,244 @@
 <body>
   <div class="page-wrap">
     <h1>Santa Cruz Mountains Long-Term Forest Monitoring Program</h1>
-    <h2 class="site-title">Stewardship Research Areas Interactive Explorer Portal</h2>
+    <p class="subtitle">Stewardship Research Areas Interactive Explorer Portal</p>
     <p class="intro">
       Interactive 360° panoramas from permanent monitoring plots in the Santa Cruz Mountains.
       Click and drag to look around; use your mouse wheel or trackpad to zoom in and out.
     </p>
 
-    <!-- ========== SITE 1 ========== -->
-    <section class="site-block">
+    <!-- Jump menu -->
+    <div class="jump-row">
+      <label for="site-select">Jump to a stewardship research area:</label>
+      <select id="site-select">
+        <option value="">Select a site…</option>
+        <option value="site-big-basin">Big Basin Redwoods State Park</option>
+        <option value="site-camp-jones">Camp Jones Gulch</option>
+        <option value="site-cr-black-oak">Castle Rock – Black Oak</option>
+        <option value="site-cr-hollow">Castle Rock – Hollow</option>
+        <option value="site-cotoni">Cotoni Coast Dairies</option>
+        <option value="site-fall-creek">Fall Creek – Henry Cowell</option>
+        <option value="site-hc-rx">Henry Cowell Prescribed Burn</option>
+        <option value="site-mt-madonna">Mount Madonna</option>
+        <option value="site-nisene-black-oak">Nisene Marks – Black Oak</option>
+        <option value="site-nisene-rx">Nisene Marks Prescribed Burn</option>
+        <option value="site-pescadero">Pescadero Creek</option>
+        <option value="site-san-vicente">San Vicente Redwoods</option>
+        <option value="site-soquel-demo">Soquel Demonstration State Forest</option>
+        <option value="site-ucsc">UCSC Forestlands</option>
+        <option value="site-wilder">Wilder Ranch</option>
+      </select>
+    </div>
+
+    <!-- ========== BIG BASIN ========== -->
+    <section class="site-block" id="site-big-basin">
       <h2 class="site-title">Big Basin Redwoods State Park</h2>
-      <p class="site-meta">35 plots - Coast redwood forest</p>
+      <p class="site-meta">35 plots – Coast redwood forest</p>
       <p class="site-desc">
-        This stewardship research area includes 35 plots collected in a second-growth coast redwood forest with some remnant old growth. The site burned in the 2020 CZU Complex and plots are stratified across a burn severity gradient. 
-        In the future, local managers intend to conduct a prescribed burn on this site.
+        Second-growth coast redwood forest with remnant old-growth patches, heavily affected by the 2020 CZU Complex.
+        Plots are stratified across a burn severity gradient to track forest structure, regeneration, and fuels over time.
       </p>
-
       <div class="pano-frame">
-        <div id="pano-bb01" class="pano-inner"></div>
+        <div id="pano-big-basin" class="pano-inner"></div>
       </div>
     </section>
 
-    <!-- ========== SITE 2 ========== -->
-    <section class="site-block">
+    <!-- ========== CAMP JONES GULCH ========== -->
+    <section class="site-block" id="site-camp-jones">
+      <h2 class="site-title">Camp Jones Gulch</h2>
+      <p class="site-meta">Coast redwood forest</p>
+      <p class="site-desc">
+        YMCA Camp Jones Gulch monitoring plots track forest conditions in actively used camp and education forests,
+        including fuels, regeneration, and stand structure.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-camp-jones" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== CASTLE ROCK – BLACK OAK ========== -->
+    <section class="site-block" id="site-cr-black-oak">
+      <h2 class="site-title">Castle Rock – Black Oak</h2>
+      <p class="site-meta">Mixed hardwood / redwood forest</p>
+      <p class="site-desc">
+        Plots focused on black oak and associated hardwood–conifer stands, providing baseline data for future fuels
+        treatments and climate adaptation work.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-cr-black-oak" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== CASTLE ROCK – HOLLOW ========== -->
+    <section class="site-block" id="site-cr-hollow">
+      <h2 class="site-title">Castle Rock – Hollow</h2>
+      <p class="site-meta">Coast redwood and mixed conifer</p>
+      <p class="site-desc">
+        Monitoring plots in steep, dissected terrain representing typical interior Santa Cruz Mountains forest conditions.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-cr-hollow" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== COTONI COAST DAIRIES ========== -->
+    <section class="site-block" id="site-cotoni">
       <h2 class="site-title">Cotoni Coast Dairies</h2>
-      <p class="site-meta">22 plots - Coast redwood forest</p>
+      <p class="site-meta">22 plots – Coast redwood forest</p>
       <p class="site-desc">
-        This baseline monitoring area includes 22 plots collected in second-growth coast redwood forests of the newly established Cotoni Coast Dairies National Monument. Some of the sites burned in the 2020 CZU Complex. 
-        Plots were placed intentionally in the largest stands of coast redwood on the property to establish baseline data for managers to use in planning and management decision making and for researchers to understand change over time.
+        Baseline plots in second-growth coast redwood forests of the newly established Cotoni Coast Dairies National Monument.
+        Some stands burned in the 2020 CZU Complex; plots capture conditions prior to large-scale restoration and fuels work.
       </p>
-
       <div class="pano-frame">
-        <div id="pano-bb10" class="pano-inner"></div>
+        <div id="pano-cotoni" class="pano-inner"></div>
       </div>
     </section>
 
-    <!-- Add more <section class="site-block">…</section> blocks as needed -->
+    <!-- ========== FALL CREEK – HENRY COWELL ========== -->
+    <section class="site-block" id="site-fall-creek">
+      <h2 class="site-title">Fall Creek – Henry Cowell</h2>
+      <p class="site-meta">Coast redwood and mixed conifer</p>
+      <p class="site-desc">
+        Plots track forest recovery and erosion-prone terrain in the Fall Creek Unit, including dense tanoak and mixed conifer stands.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-fall-creek" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== HENRY COWELL RX ========== -->
+    <section class="site-block" id="site-hc-rx">
+      <h2 class="site-title">Henry Cowell – Prescribed Burn Unit</h2>
+      <p class="site-meta">Prescribed fire monitoring plots</p>
+      <p class="site-desc">
+        Monitoring plots established in areas treated with prescribed fire to evaluate fuels reduction, understory response,
+        and regeneration relative to untreated stands.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-hc-rx" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== MOUNT MADONNA ========== -->
+    <section class="site-block" id="site-mt-madonna">
+      <h2 class="site-title">Mount Madonna</h2>
+      <p class="site-meta">Coast redwood and mixed hardwood</p>
+      <p class="site-desc">
+        Plots in county park forests capturing a mix of redwood, hardwoods, and legacy tanoak mortality, supporting
+        future fuels and restoration planning.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-mt-madonna" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== NISENE MARKS – BLACK OAK ========== -->
+    <section class="site-block" id="site-nisene-black-oak">
+      <h2 class="site-title">Nisene Marks – Black Oak</h2>
+      <p class="site-meta">Mixed hardwood / redwood forest</p>
+      <p class="site-desc">
+        Focused on black oak and associated species to understand composition, structure, and resilience in coastal
+        mixed-hardwood settings.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-nisene-black-oak" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== NISENE MARKS RX ========== -->
+    <section class="site-block" id="site-nisene-rx">
+      <h2 class="site-title">Nisene Marks – Prescribed Burn</h2>
+      <p class="site-meta">Prescribed fire monitoring plots</p>
+      <p class="site-desc">
+        Plots established in collaboration with State Parks to monitor fuels, regeneration, and understory response
+        to prescribed fire.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-nisene-rx" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== PESCADERO CREEK ========== -->
+    <section class="site-block" id="site-pescadero">
+      <h2 class="site-title">Pescadero Creek</h2>
+      <p class="site-meta">Redwood, Douglas-fir, and hardwoods</p>
+      <p class="site-desc">
+        Monitoring plots spanning interior coast redwood and Douglas-fir stands in Pescadero Creek County and State Parks.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-pescadero" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== SAN VICENTE REDWOODS ========== -->
+    <section class="site-block" id="site-san-vicente">
+      <h2 class="site-title">San Vicente Redwoods</h2>
+      <p class="site-meta">Working forest conservation lands</p>
+      <p class="site-desc">
+        Plots established in actively managed conservation timberlands to track outcomes of fuels treatments, selective harvest,
+        and restoration activities.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-san-vicente" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== SOQUEL DEMO ========== -->
+    <section class="site-block" id="site-soquel-demo">
+      <h2 class="site-title">Soquel Demonstration State Forest</h2>
+      <p class="site-meta">Demonstration timber management forest</p>
+      <p class="site-desc">
+        Monitoring plots in uneven-aged redwood stands and recent harvest units, supporting demonstration of sustainable
+        timber management in the redwood region.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-soquel-demo" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== UCSC FORESTLANDS ========== -->
+    <section class="site-block" id="site-ucsc">
+      <h2 class="site-title">UCSC Forestlands</h2>
+      <p class="site-meta">University research and teaching forest</p>
+      <p class="site-desc">
+        Plots on UCSC-managed lands support long-term research, teaching, and collaborative stewardship efforts in mixed redwood
+        and hardwood forests.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-ucsc" class="pano-inner"></div>
+      </div>
+    </section>
+
+    <!-- ========== WILDER RANCH ========== -->
+    <section class="site-block" id="site-wilder">
+      <h2 class="site-title">Wilder Ranch</h2>
+      <p class="site-meta">Coast redwood and coastal terrace forests</p>
+      <p class="site-desc">
+        Monitoring plots spanning coastal terrace and canyon forests, documenting structure, fuels, and regeneration in
+        State Parks lands adjacent to urban interfaces.
+      </p>
+      <div class="pano-frame">
+        <div id="pano-wilder" class="pano-inner"></div>
+      </div>
+    </section>
 
   </div>
 
   <script>
-    // Viewer 1 – Big Basin
-    pannellum.viewer('pano-bb01', {
+    // Dropdown jump-to-site behavior
+    document.getElementById('site-select').addEventListener('change', function () {
+      var targetId = this.value;
+      if (!targetId) return;
+      var el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+    // ---- Pannellum viewers ----
+    // Filenames must match exactly what you upload to the repo (case sensitive).
+
+    pannellum.viewer('pano-big-basin', {
       "type": "equirectangular",
       "panorama": "BigBasin001.jpg",
       "autoLoad": true,
@@ -125,19 +346,131 @@
       "compass": true
     });
 
-    // Viewer 2 – Cotoni Coast Dairies
-    pannellum.viewer('pano-bb10', {
+    pannellum.viewer('pano-camp-jones', {
       "type": "equirectangular",
-      "panorama": "CCD.jpg",   // <-- change to your actual filename
+      "panorama": "CJG.jpg",
       "autoLoad": true,
       "autoRotate": -2,
       "showZoomCtrl": true,
       "compass": true
     });
 
-    // To add more viewers:
-    // 1) Add another <section> with a new div id="pano-XYZ"
-    // 2) Add another pannellum.viewer('pano-XYZ', { ... }) block here
+    pannellum.viewer('pano-cr-black-oak', {
+      "type": "equirectangular",
+      "panorama": "CRBO.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-cr-hollow', {
+      "type": "equirectangular",
+      "panorama": "CRH.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-cotoni', {
+      "type": "equirectangular",
+      "panorama": "CCD.jpg",  // upload/rename your Cotoni image to CCD.jpg
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-fall-creek', {
+      "type": "equirectangular",
+      "panorama": "FC.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-hc-rx', {
+      "type": "equirectangular",
+      "panorama": "HCRX.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-mt-madonna', {
+      "type": "equirectangular",
+      "panorama": "MM.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-nisene-black-oak', {
+      "type": "equirectangular",
+      "panorama": "NMBO.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-nisene-rx', {
+      "type": "equirectangular",
+      "panorama": "NMRX.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-pescadero', {
+      "type": "equirectangular",
+      "panorama": "PC.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-san-vicente', {
+      "type": "equirectangular",
+      "panorama": "SVR.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-soquel-demo', {
+      "type": "equirectangular",
+      "panorama": "SDSF.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-ucsc', {
+      "type": "equirectangular",
+      "panorama": "UC.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
+
+    pannellum.viewer('pano-wilder', {
+      "type": "equirectangular",
+      "panorama": "WR.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showZoomCtrl": true,
+      "compass": true
+    });
   </script>
 
 </body>
