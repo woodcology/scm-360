@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Santa Cruz Mountains Long-Term Forest Monitoring Program Explorer</title>
+  <title>Santa Cruz Mountains Long-Term Forest Monitoring Program</title>
 
   <link rel="stylesheet" href="pannellum.css"/>
   <script src="pannellum.js"></script>
@@ -25,65 +25,70 @@
     h1 {
       margin-top: 0;
       margin-bottom: 0.5rem;
-      font-size: 1.8rem;
+      font-size: 1.9rem;
     }
 
-    .subtitle {
-      margin: 0 0 0.75rem;
-      font-size: 1.05rem;
+    .site-title-main {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
       font-weight: 600;
     }
 
     .intro {
       margin-bottom: 1.5rem;
-      font-size: 0.98rem;
+      font-size: 1rem;
+      line-height: 1.55;
     }
 
-    .jump-row {
-      margin-bottom: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      align-items: center;
-      font-size: 0.95rem;
-    }
-
-    .jump-row label {
-      font-weight: 600;
-    }
-
-    .jump-row select {
-      padding: 0.35rem 0.5rem;
-      font-size: 0.95rem;
-    }
-
+    /* Card style improvements */
     .site-block {
       background: #fff;
-      border-radius: 8px;
-      padding: 1rem 1rem 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem 1.75rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      border: 1px solid #e5e5e5;
+      transition: box-shadow 0.15s ease;
     }
 
-    .site-title {
+    .site-block:hover {
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2.site-title {
       margin: 0 0 0.25rem;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
 
     .site-meta {
-      margin: 0 0 0.75rem;
-      font-size: 0.85rem;
+      margin: 0 0 0.5rem;
+      font-size: 0.9rem;
       color: #555;
     }
 
     .site-desc {
       margin: 0 0 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .view-link {
       font-size: 0.9rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem;
+    }
+
+    .view-link a {
+      text-decoration: none;
+      color: #0055aa;
+    }
+
+    .view-link a:hover {
+      text-decoration: underline;
     }
 
     .pano-frame {
       width: 100%;
-      height: 420px; /* adjust height to taste */
+      height: 420px;
       border-radius: 6px;
       overflow: hidden;
       background: #000;
@@ -94,20 +99,42 @@
       width: 100%;
       height: 100%;
     }
+
+    /* Sticky jump menu */
+    .sticky-select {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #f4f4f4;
+      padding: 0.75rem 0 1rem;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 1.5rem;
+    }
+
+    .sticky-select select {
+      padding: 0.35rem 0.5rem;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 
 <body>
   <div class="page-wrap">
+
     <h1>Santa Cruz Mountains Long-Term Forest Monitoring Program</h1>
-    <p class="subtitle">Stewardship Research Areas Interactive Explorer Portal</p>
+    <p class="site-title-main">Stewardship Research Areas Interactive Explorer Portal</p>
+
     <p class="intro">
-Explore interactive visualizations, ecological information, and data summaries for the 15 Stewardship Research Areas (SRAs) across the Santa Cruz Mountains. The SRAs form the foundation of the Santa Cruz Mountains Long-Term Forest Monitoring Program, a permanent network of 304 monitoring plots established across public, private, and working forestlands. All sites follow standardized data collection methods using the <a href="https://ucanr.edu/county/santa-cruz-county/monitoring-resources-protocols-and-gear-share" target="_blank">Regional Stewardship Trends Monitoring Protocol</a>. Click and drag to look around each 360° scene; use your mouse or trackpad to zoom in and out.
+      Explore interactive visualizations, ecological information, and data summaries for the 15 Stewardship Research Areas (SRAs) across the Santa Cruz Mountains.
+      The SRAs form the foundation of the Santa Cruz Mountains Long-Term Forest Monitoring Program, a permanent network of 304 monitoring plots established across public, private, and working forestlands.
+      All sites follow standardized data collection methods using the
+      <a href="https://ucanr.edu/county/santa-cruz-county/monitoring-resources-protocols-and-gear-share" target="_blank">Regional Stewardship Trends Monitoring Protocol</a>.
+      Click and drag to look around each 360° scene; use your mouse or trackpad to zoom in and out.
     </p>
 
-    <!-- Jump menu -->
-    <div class="jump-row">
-      <label for="site-select">Jump to a stewardship research area:</label>
+    <!-- Sticky Jump Menu -->
+    <div class="sticky-select">
+      <label for="site-select"><strong>Jump to a stewardship research area: </strong></label>
       <select id="site-select">
         <option value="">Select a site…</option>
         <option value="site-big-basin">Big Basin Redwoods State Park</option>
@@ -132,6 +159,7 @@ Explore interactive visualizations, ecological information, and data summaries f
     <section class="site-block" id="site-big-basin">
       <h2 class="site-title">Big Basin Redwoods State Park</h2>
       <p class="site-meta">35 plots – Coast redwood forest</p>
+      <p class="view-link"><a href="big-basin.html">View full Big Basin page →</a></p>
       <p class="site-desc">
         Second-growth coast redwood forest with remnant old-growth patches, heavily affected by the 2020 CZU Complex.
         Plots are stratified across a burn severity gradient to track forest structure, regeneration, and fuels over time.
@@ -322,8 +350,8 @@ Explore interactive visualizations, ecological information, and data summaries f
 
   </div>
 
+  <!-- Jump-menu smooth scroll -->
   <script>
-    // Dropdown jump-to-site behavior
     document.getElementById('site-select').addEventListener('change', function () {
       var targetId = this.value;
       if (!targetId) return;
@@ -332,10 +360,10 @@ Explore interactive visualizations, ecological information, and data summaries f
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
+  </script>
 
-    // ---- Pannellum viewers ----
-    // Filenames must match exactly what you upload to the repo (case sensitive).
-
+  <!-- Pannellum viewers -->
+  <script>
     pannellum.viewer('pano-big-basin', {
       "type": "equirectangular",
       "panorama": "BigBasin001.jpg",
@@ -374,7 +402,7 @@ Explore interactive visualizations, ecological information, and data summaries f
 
     pannellum.viewer('pano-cotoni', {
       "type": "equirectangular",
-      "panorama": "CCD.jpg",  // upload/rename your Cotoni image to CCD.jpg
+      "panorama": "CCD.jpg",  // update if you use a different Cotoni filename
       "autoLoad": true,
       "autoRotate": -2,
       "showZoomCtrl": true,
