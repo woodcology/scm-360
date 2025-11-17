@@ -42,6 +42,7 @@
 
     /* Card style improvements */
     .site-block {
+      display: none;                /* hide by default */
       background: #fff;
       border-radius: 10px;
       padding: 1.25rem 1.5rem 1.75rem;
@@ -49,6 +50,10 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.06);
       border: 1px solid #e5e5e5;
       transition: box-shadow 0.15s ease;
+    }
+
+    .site-block.active {            /* only the active site is shown */
+      display: block;
     }
 
     .site-block:hover {
@@ -156,7 +161,7 @@
     </div>
 
     <!-- ========== BIG BASIN ========== -->
-    <section class="site-block" id="site-big-basin">
+    <section class="site-block active" id="site-big-basin">
       <h2 class="site-title">Big Basin Redwoods State Park</h2>
       <p class="site-meta">35 plots – Coast redwood forest</p>
       <p class="view-link"><a href="big-basin.html">View full Big Basin page →</a></p>
@@ -200,7 +205,7 @@
       <h2 class="site-title">Castle Rock – Hollow</h2>
       <p class="site-meta">14 plots - Coast redwood and mixed conifer</p>
       <p class="site-desc">
-      Castle Rock Hollow is a Sempervirens Fund holding that is adjacent to Castle Rock State Park. The site is characterised as second growth with some protected remnant old-growth redwoods. 
+        Castle Rock Hollow is a Sempervirens Fund holding that is adjacent to Castle Rock State Park. The site is characterised as second growth with some protected remnant old-growth redwoods. 
         14 plots were collected as baseline data to support future stewardship deicion making. The plots were destributed randomly across stands with the tallest trees on the property.
       </p>
       <div class="pano-frame">
@@ -208,7 +213,7 @@
       </div>
     </section>
 
-    <!-- ========== COTONI COAST DAIRIES ========== -->
+    <!-- ========== COTONI COAST Dairies ========== -->
     <section class="site-block" id="site-cotoni">
       <h2 class="site-title">Cotoni Coast Dairies</h2>
       <p class="site-meta">22 plots – Coast redwood forest</p>
@@ -226,7 +231,7 @@
       <h2 class="site-title">Fall Creek – Henry Cowell</h2>
       <p class="site-meta">Coast redwood and mixed conifer</p>
       <p class="site-desc">
-        
+        <!-- fill in later -->
       </p>
       <div class="pano-frame">
         <div id="pano-fall-creek" class="pano-inner"></div>
@@ -262,7 +267,7 @@
       <h2 class="site-title">Nisene Marks – Black Oak</h2>
       <p class="site-meta">Mixed hardwood / redwood forest</p>
       <p class="site-desc">
-These plots were collected to evaluate the status of mature black oaks, track encroachment by Douglas fir, and monitor regeneration and recruitment success over time in this rare habitat type.
+        These plots were collected to evaluate the status of mature black oaks, track encroachment by Douglas fir, and monitor regeneration and recruitment success over time in this rare habitat type.
         Sites were straified across an area that contains historical and ongoing stewardship activities.
       </p>
       <div class="pano-frame">
@@ -288,7 +293,7 @@ These plots were collected to evaluate the status of mature black oaks, track en
       <h2 class="site-title">Pescadero Creek</h2>
       <p class="site-meta">27 plots - Redwood, Douglas-fir, and hardwoods</p>
       <p class="site-desc">
-        Monitoring plots spanning coast redwood  stands in Pescadero Creek County that will be treated in the future to accelerate old growth forest characteristics.
+        Monitoring plots spanning coast redwood stands in Pescadero Creek County that will be treated in the future to accelerate old growth forest characteristics.
       </p>
       <div class="pano-frame">
         <div id="pano-pescadero" class="pano-inner"></div>
@@ -346,154 +351,68 @@ These plots were collected to evaluate the status of mature black oaks, track en
 
   </div>
 
-  <!-- Jump-menu smooth scroll -->
   <script>
+    // Config for each site's panorama
+    const siteConfigs = {
+      "site-big-basin":       { panoId: "pano-big-basin",       image: "BigBasin001.jpg" },
+      "site-camp-jones":      { panoId: "pano-camp-jones",      image: "CJG.jpg" },
+      "site-cr-black-oak":    { panoId: "pano-cr-black-oak",    image: "CRBO.jpg" },
+      "site-cr-hollow":       { panoId: "pano-cr-hollow",       image: "CRH.jpg" },
+      "site-cotoni":          { panoId: "pano-cotoni",          image: "CCD.jpg" },
+      "site-fall-creek":      { panoId: "pano-fall-creek",      image: "FC.jpg" },
+      "site-hc-rx":           { panoId: "pano-hc-rx",           image: "HCRX.jpg" },
+      "site-mt-madonna":      { panoId: "pano-mt-madonna",      image: "MM.jpg" },
+      "site-nisene-black-oak":{ panoId: "pano-nisene-black-oak",image: "NMBO.jpg" },
+      "site-nisene-rx":       { panoId: "pano-nisene-rx",       image: "NMRX.jpg" },
+      "site-pescadero":       { panoId: "pano-pescadero",       image: "PC.jpg" },
+      "site-san-vicente":     { panoId: "pano-san-vicente",     image: "SVR.jpg" },
+      "site-soquel-demo":     { panoId: "pano-soquel-demo",     image: "SDSF.jpg" },
+      "site-ucsc":            { panoId: "pano-ucsc",            image: "UC.jpg" },
+      "site-wilder":          { panoId: "pano-wilder",          image: "WR.jpg" }
+    };
+
+    const initialized = {};
+
+    function showSite(siteId) {
+      // hide all blocks
+      document.querySelectorAll('.site-block').forEach(el => el.classList.remove('active'));
+
+      const section = document.getElementById(siteId);
+      if (!section) return;
+
+      section.classList.add('active');
+
+      // scroll into view
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      const cfg = siteConfigs[siteId];
+      if (!cfg) return;
+
+      // only create viewer the first time this site is shown
+      if (!initialized[siteId]) {
+        pannellum.viewer(cfg.panoId, {
+          "type": "equirectangular",
+          "panorama": cfg.image,
+          "autoLoad": true,
+          "autoRotate": -2,
+          "showZoomCtrl": true,
+          "compass": true
+        });
+        initialized[siteId] = true;
+      }
+    }
+
+    // dropdown handler
     document.getElementById('site-select').addEventListener('change', function () {
-      var targetId = this.value;
-      if (!targetId) return;
-      var el = document.getElementById(targetId);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const siteId = this.value;
+      if (siteId) {
+        showSite(siteId);
       }
     });
-  </script>
 
-  <!-- Pannellum viewers -->
-  <script>
-    pannellum.viewer('pano-big-basin', {
-      "type": "equirectangular",
-      "panorama": "BigBasin001.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-camp-jones', {
-      "type": "equirectangular",
-      "panorama": "CJG.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-cr-black-oak', {
-      "type": "equirectangular",
-      "panorama": "CRBO.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-cr-hollow', {
-      "type": "equirectangular",
-      "panorama": "CRH.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-cotoni', {
-      "type": "equirectangular",
-      "panorama": "CCD.jpg",  // update if you use a different Cotoni filename
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-fall-creek', {
-      "type": "equirectangular",
-      "panorama": "FC.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-hc-rx', {
-      "type": "equirectangular",
-      "panorama": "HCRX.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-mt-madonna', {
-      "type": "equirectangular",
-      "panorama": "MM.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-nisene-black-oak', {
-      "type": "equirectangular",
-      "panorama": "NMBO.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-nisene-rx', {
-      "type": "equirectangular",
-      "panorama": "NMRX.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-pescadero', {
-      "type": "equirectangular",
-      "panorama": "PC.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-san-vicente', {
-      "type": "equirectangular",
-      "panorama": "SVR.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-soquel-demo', {
-      "type": "equirectangular",
-      "panorama": "SDSF.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-ucsc', {
-      "type": "equirectangular",
-      "panorama": "UC.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
-
-    pannellum.viewer('pano-wilder', {
-      "type": "equirectangular",
-      "panorama": "WR.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showZoomCtrl": true,
-      "compass": true
-    });
+    // initial state: show Big Basin
+    document.getElementById('site-select').value = 'site-big-basin';
+    showSite('site-big-basin');
   </script>
 
 </body>
