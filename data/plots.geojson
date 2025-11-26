@@ -1,0 +1,4261 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25358118833334,
+          37.202489415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25956996166666,
+          37.195288945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24238071799124,
+          37.19708570375597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24301275146432,
+          37.19801656794056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25074200166668,
+          37.19466281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25041281316663,
+          37.197469701500005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25560555666668,
+          37.19995595500001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24362967833332,
+          37.19932606333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2558518375,
+          37.19876730333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25850220766668,
+          37.19647239700001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.250271575,
+          37.197801105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24350928950734,
+          37.19763300470956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24526802666666,
+          37.19304841833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2519888205,
+          37.20387077516666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25043165333334,
+          37.19581897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24435374833337,
+          37.20613923833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25038911600002,
+          37.19534028566666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25592759166666,
+          37.201001228333325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25650606416666,
+          37.20109218533333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24449449,
+          37.19438074333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24941565466666,
+          37.19465625033334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB32"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26171554333332,
+          37.19399511333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB34"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24638075666664,
+          37.20583706666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB35"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25394329833335,
+          37.20022909333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24554646,
+          37.195204585000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB37"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25962985833334,
+          37.19589317333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB39"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2583135795,
+          37.19506703766666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24531024600002,
+          37.20655930833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.258821245,
+          37.20346655166667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25763489133332,
+          37.202490833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25857316833331,
+          37.202912195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25688653583332,
+          37.202782211333336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25879446683334,
+          37.193974970666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26199408666668,
+          37.194017235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "big basin",
+        "plot_name": "BB8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26219438833331,
+          37.19443067333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15327431333333,
+          37.02148714333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.213248315,
+          37.04409960483333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.21253516333334,
+          37.045869433333344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.20937961216664,
+          37.04552030600001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.20967246,
+          37.04583453333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2069153865,
+          37.04006574249999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.18975294616666,
+          37.03755066266667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1834642,
+          37.0333915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15171207833332,
+          37.020860131666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.18502882883335,
+          37.036605292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.18990839,
+          37.040477535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1536223995,
+          37.00877933733333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15260143,
+          37.00809375166666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1537519,
+          37.0178814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15334354133331,
+          37.0168401365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.150233428,
+          37.0212228555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14981422266668,
+          37.02112680683334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14680159483332,
+          37.00525362900001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14940147333334,
+          37.01000200833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.19490682,
+          37.03182175666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.19693510833336,
+          37.031885136666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "cotoni",
+        "plot_name": "CD9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.20661533666669,
+          37.03869979666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26572849999998,
+          37.284009100000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26406515066668,
+          37.28674605533334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26785570083334,
+          37.284411216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2644529,
+          37.287182300000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26084790000002,
+          37.2839719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.264897472,
+          37.28343730866666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2676346715,
+          37.28466158616666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2646034,
+          37.2868601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.267181,
+          37.284993500000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2672288,
+          37.284759300000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26583843416664,
+          37.28360699966667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2671957,
+          37.284438900000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2610792,
+          37.2842802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGT9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2656627,
+          37.2844902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2674994,
+          37.284011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26891164333335,
+          37.28369766833334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26798418666668,
+          37.28374393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2676289,
+          37.2834113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26887971166668,
+          37.28334611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26182341666666,
+          37.285535329333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2623733215,
+          37.285536604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26805469499998,
+          37.28345395666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.263860369,
+          37.28697378883333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26426238516666,
+          37.28340731116666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26845614500002,
+          37.28372090333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26845385333334,
+          37.28337431333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2675257,
+          37.2836113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "camp jones gulch",
+        "plot_name": "CJGU28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2681251,
+          37.2840512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14990131316664,
+          37.221724932166666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14791985833332,
+          37.22144717483334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1520986235,
+          37.22116862766667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15050538833331,
+          37.221059061666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14986201300002,
+          37.2214880965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14937413833334,
+          37.22033433833334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15094847833336,
+          37.221110185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15147009233334,
+          37.22170648516667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.149737254,
+          37.220668553666655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14978070833334,
+          37.22203808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15049077133332,
+          37.22191521966667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14884998049996,
+          37.22158468883333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14986759,
+          37.21912310333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock hollow",
+        "plot_name": "CRH9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.14959767166664,
+          37.219195340000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1088743145,
+          37.23172971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10839306333334,
+          37.234891795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10822957666666,
+          37.23587163333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10812569333332,
+          37.23531406666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1082261435,
+          37.23110266366667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.11004746366667,
+          37.23398747466667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10892798166664,
+          37.23221295166666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.108893857,
+          37.23402095183334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1086991595,
+          37.233458379000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.110374303,
+          37.23424105283334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.111029144,
+          37.23425577733333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "ECR9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1090660655,
+          37.23435149133334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "FC10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.09966027966668,
+          37.07012688033333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.09859425433334,
+          37.06982204816667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.09838889866668,
+          37.07041246783333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10133980000002,
+          37.0711183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10110732833331,
+          37.071897237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1006245555,
+          37.070474888666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10036287149998,
+          37.071279387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.11108079583332,
+          37.07772652583333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1115893,
+          37.0782037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1120184,
+          37.0783345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.111329074,
+          37.07883559783334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1107814,
+          37.078031200000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.110282448,
+          37.07757238933333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1106666,
+          37.0782713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.11080075083336,
+          37.07836145533334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10300042,
+          37.07207262533333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10187646,
+          37.07118698166666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10254498733332,
+          37.07169548350001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1016987715,
+          37.071691281166665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10166520033331,
+          37.07259093850001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "fall creek henry cowell",
+        "plot_name": "FC9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1008045,
+          37.06999460000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "henry cowell rx",
+        "plot_name": "HC1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.06367203333332,
+          37.0394819465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "henry cowell rx",
+        "plot_name": "HC2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.063809883,
+          37.03971139116666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "henry cowell rx",
+        "plot_name": "HC3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.06335292883332,
+          37.03972551366667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10784835833334,
+          37.22916355666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10782492166666,
+          37.22938813333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1073615355,
+          37.229123463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.106541442,
+          37.22944339183334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10577711533332,
+          37.22961713566667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10544793333332,
+          37.22863924333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10488326,
+          37.22868977833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10360252050002,
+          37.2287683285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10304597,
+          37.22953350083333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10308893316666,
+          37.22935501916667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10331999833332,
+          37.230315063333336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "castle rock black oak",
+        "plot_name": "LCR24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.10368067166668,
+          37.23079526333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMDEC10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.75010164916668,
+          37.03058274483333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMDEC11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74939219799998,
+          37.030152593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMDEC14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74756823016666,
+          37.029051066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMDEC15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74730310000002,
+          37.0291809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMDEC6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74868496533334,
+          37.02838220933333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMDEC7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7489148,
+          37.0285865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMDEC8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.75044709999996,
+          37.03041400000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMDEC9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74852420000002,
+          37.02986309999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMFTT1A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.749417195,
+          37.03072576666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMFTT2025A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74844474433334,
+          37.03042623833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMFTT2025B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74816869,
+          37.03092520966666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMFTT2A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74873682833336,
+          37.03056046333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMFTT2B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74873980333332,
+          37.0309801555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMFTT3A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74786827666668,
+          37.03059635000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMFTT3B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74797674600002,
+          37.030157236166666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMFTT4A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74760867666666,
+          37.02998765666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "mount madonna",
+        "plot_name": "MMFTT4B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.74738088066668,
+          37.03003677566667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.85105451483332,
+          37.06824242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84806251266669,
+          37.0672139445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84747491333334,
+          37.06835605166666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84453075516667,
+          37.06572975500001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.848794065,
+          37.06639904333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84711379833334,
+          37.0666768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84518418999998,
+          37.06641878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84540930366668,
+          37.0676247815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84345209016668,
+          37.06586128466667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84173683547708,
+          37.06389533578181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8512872941667,
+          37.067714546000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM199"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.85128569833331,
+          37.067567033333326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84196802034418,
+          37.06348920801888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84177831,
+          37.065576265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM200"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84213968066666,
+          37.06585737033333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.85085827,
+          37.06920744083333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.844986705,
+          37.068572286666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84633526166664,
+          37.068488335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84998222566668,
+          37.06973397883333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84856788133332,
+          37.06818147583333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84956878833334,
+          37.06812607666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84106629999998,
+          37.06321439999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84134901083334,
+          37.062559808833335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84561041633332,
+          37.065293720166665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84992217883337,
+          37.06666598499999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84974668333334,
+          37.06631939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.85078775666668,
+          37.06706623183334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84211610666668,
+          37.06518224166667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84169753666664,
+          37.06492886666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks rx",
+        "plot_name": "NM9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.84253532,
+          37.06527074833334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86900251833336,
+          37.07240483166667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86945140000002,
+          37.0724644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86855682666668,
+          37.07463544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86849773166664,
+          37.07481811833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.869887529,
+          37.072335685666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86919537683332,
+          37.07275752666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.87050588333334,
+          37.07201840666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.87044623,
+          37.07250516666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.87080448033332,
+          37.07244784666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.870154565,
+          37.072101686666656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.87078613666668,
+          37.0718893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86946297916666,
+          37.0727363845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8691779,
+          37.0723255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86852147333332,
+          37.07437246666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86984680416666,
+          37.07269880533334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "nisene marks black oak",
+        "plot_name": "NMBO8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.86962730550002,
+          37.072353889333336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27144849333332,
+          37.26815379333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26941672883336,
+          37.2696146685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26872383333333,
+          37.269752335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26994083833333,
+          37.270085335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26804749166668,
+          37.26984021999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26744978333332,
+          37.26682534333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26739970316666,
+          37.26730957149999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26661933266666,
+          37.26728471566667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.266371,
+          37.268897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26700049402643,
+          37.26910376792119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26713976833337,
+          37.269738745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27026867649998,
+          37.26831182466667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.266647,
+          37.269417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26558861166669,
+          37.268713811666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26565335833332,
+          37.26933731333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26108565516668,
+          37.26638887916667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25994189166668,
+          37.267029365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26523689433331,
+          37.268166091000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26513894616669,
+          37.26962157966667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27057551,
+          37.26879431833334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26802062,
+          37.26735081833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26933498416663,
+          37.26800508166667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26780277333334,
+          37.268545198333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27095695000004,
+          37.269330446666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27161055566664,
+          37.2699084085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "pescadero creek",
+        "plot_name": "PC9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27097144,
+          37.27008438000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93047461666664,
+          37.08199379816666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9295977575,
+          37.08241526133334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93305869666668,
+          37.084074294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93174883016664,
+          37.083377307000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.92987002283334,
+          37.083409518500005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93303530216666,
+          37.0858223315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93019461716668,
+          37.08728582616667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93016450333334,
+          37.08774147483333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.92960700000002,
+          37.0801034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93157425283334,
+          37.08226938933333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9312609545,
+          37.079012088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.92951120316664,
+          37.081234048000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93130666333332,
+          37.08457476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93047380000002,
+          37.084209400000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.92956609,
+          37.084206735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93219800666668,
+          37.085258681666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9293198,
+          37.0781742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93335407783331,
+          37.087195215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93017242,
+          37.08607746166666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.92936753833337,
+          37.08609870333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9298689875,
+          37.0791796835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.931368,
+          37.0807513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9299891,
+          37.080637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9310220525,
+          37.081583311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "soquel demo",
+        "plot_name": "SDSF9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.93090772666667,
+          37.083013353333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17611387316668,
+          37.06435179599999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.16282350833332,
+          37.07614413499999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.16262290833336,
+          37.07729420966667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.16170319583334,
+          37.07994553583334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15744662833336,
+          37.078128308333326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17452108283332,
+          37.079961732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17449291966668,
+          37.08876209566667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17062349666666,
+          37.08843473333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17808248933336,
+          37.08935864933333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.177441132,
+          37.065644393666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17728567199998,
+          37.0888551975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.16418929883334,
+          37.0865041635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.16174227166664,
+          37.08204469333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.16866535483332,
+          37.08869144166667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.164973955,
+          37.08763813666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.15668823366664,
+          37.08122571433333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1584281645,
+          37.08594703466667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17667080066668,
+          37.06803714633334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1594514,
+          37.087514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17842474383332,
+          37.0740126445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.177400375,
+          37.075233278666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17665597833332,
+          37.0761401225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "san vicente redwoods",
+        "plot_name": "SVR7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.174409784,
+          37.0794125285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05438097783332,
+          37.003275318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0535554375,
+          37.002610377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05385625,
+          37.00374562500001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05475192333331,
+          37.003879783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05282755,
+          37.002995135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05364124349998,
+          37.003170573666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05399806833331,
+          37.00248154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05499370083336,
+          37.002776796666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0554991215,
+          37.00325655666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "ucsc",
+        "plot_name": "UC9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05585803833334,
+          37.002736795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.08294286,
+          36.98319927333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0826992,
+          36.9826186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0834013,
+          36.9825625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.08385359999998,
+          36.9840739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.08102495566663,
+          36.982414068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.083348715,
+          36.98366929333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.082796885,
+          36.98372283833333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.08346257333332,
+          36.98318500500001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.08188344033331,
+          36.980683966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site": "wilder ranch",
+        "plot_name": "WR8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0832911,
+          36.9841327
+        ]
+      }
+    }
+  ]
+}
