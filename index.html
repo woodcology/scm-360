@@ -405,150 +405,179 @@
 
   </div>
 
-  <!-- Leaflet plot map script -->
-  <script>
-    // simple categorical color mapping based on the "site" field
-    const SITE_COLORS = [
-      "#e41a1c",
-      "#377eb8",
-      "#4daf4a",
-      "#984ea3",
-      "#ff7f00",
-      "#a65628",
-      "#f781bf",
-      "#999999",
-      "#1f78b4",
-      "#33a02c",
-      "#6a3d9a",
-      "#b15928"
-    ];
+ <!-- Leaflet plot map script -->
+<script>
+  // Palette of distinct base colors
+  const SITE_PALETTE = [
+    "#e41a1c",
+    "#377eb8",
+    "#4daf4a",
+    "#984ea3",
+    "#ff7f00",
+    "#a65628",
+    "#f781bf",
+    "#999999",
+    "#1f78b4",
+    "#33a02c",
+    "#6a3d9a",
+    "#b15928",
+    "#ffff33",
+    "#8dd3c7",
+    "#fb8072",
+    "#80b1d3",
+    "#bebada",
+    "#fccde5",
+    "#b3de69",
+    "#fccde5"
+  ];
 
-    function siteColor(site) {
-      const s = (site || "").toString().toLowerCase().trim();
-      if (!s) return "#7f8c8d";
-      let hash = 0;
-      for (let i = 0; i < s.length; i++) {
-        hash = (hash * 31 + s.charCodeAt(i)) & 0xffffffff;
-      }
-      const idx = Math.abs(hash) % SITE_COLORS.length;
-      return SITE_COLORS[idx];
+  // Map of site name -> color, filled as we encounter sites
+  const siteColorMap = {};
+  let siteColorIndex = 0;
+
+  function getSiteColor(site) {
+    const key = (site || "Unknown").toString().trim();
+    if (siteColorMap[key]) {
+      return siteColorMap[key];
     }
 
-    (function initPlotMap() {
-      const mapEl = document.getElementById("plot-map");
-      if (!mapEl) return;
+    let color;
+    if (siteColorIndex < SITE_PALETTE.length) {
+      // Use predefined palette first
+      color = SITE_PALETTE[siteColorIndex];
+    } else {
+      // Fallback: generate additional colors in HSL space if needed
+      const extra = siteColorIndex - SITE_PALETTE.length;
+      const hue = (extra * 47) % 360;
+      color = `hsl(${hue}, 70%, 45%)`;
+    }
 
-      const map = L.map("plot-map", {
-        attributionControl: true
-      }).setView([37.1, -122.1], 9);
+    siteColorMap[key] = color;
+    siteColorIndex += 1;
+    return color;
+  }
 
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 18,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-      }).addTo(map);
+  (function initPlotMap() {
+    const mapEl = document.getElementById("plot-map");
+    if (!mapEl) return;
 
-      fetch("data/plots.geojson")
-        .then(r => r.json())
-        .then(data => {
-          const layer = L.geoJSON(data, {
-            pointToLayer: (feature, latlng) => {
-              const props = feature.properties || {};
-              const color = siteColor(props.site);
-              return L.circleMarker(latlng, {
-                radius: 5,
-                weight: 1,
-                color: "#333",
-                fillColor: color,
-                fillOpacity: 0.9
-              });
-            },
-            onEachFeature: (feature, layer) => {
-              const p = feature.properties || {};
-              const plotName = p.plot_name || "";
-              const site = p.site || "Unknown site";
-              layer.bindPopup(
-                `<strong>${plotName}</strong><br>` +
-                `Site: ${site}`
-              );
-            }
-          }).addTo(map);
+    const map = L.map("plot-map", {
+      attributionControl: true
+    }).setView([37.1, -122.1], 9);
 
-          try {
-            map.fitBounds(layer.getBounds().pad(0.2));
-          } catch (e) {
-            console.warn("Could not fit bounds for plot map:", e);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    fetch("data/plots.geojson")
+      .then(r => r.json())
+      .then(data => {
+        const layer = L.geoJSON(data, {
+          pointToLayer: (feature, latlng) => {
+            const props = feature.properties || {};
+            const color = getSiteColor(props.site);
+            return L.circleMarker(latlng, {
+              radius: 5,
+              weight: 1,
+              color: "#333",
+              fillColor: color,
+              fillOpacity: 0.9
+            });
+          },
+          onEachFeature: (feature, layer) => {
+            const p = feature.properties || {};
+            const plotName = p.plot_name || "";
+            const site = p.site || "Unknown site";
+            layer.bindPopup(
+              `<strong>${plotName}</strong><br>` +
+              `Site: ${site}`
+            );
           }
-        })
-        .catch(err => {
-          console.error("Error loading data/plots.geojson", err);
-        });
-    })();
-  </script>
+        }).addTo(map);
+
+        try {
+          map.fitBounds(layer.getBounds().pad(0.2));
+        } catch (e) {
+          console.warn("Could not fit bounds for plot map:", e);
+        }
+      })
+      .catch(err => {
+        console.error("Error loading data/plots.geojson", err);
+      });
+  })();
+</script>
 
   <!-- Existing pannellum / site switcher script -->
-  <script>
-    // Config for each site's panorama
-    const siteConfigs = {
-      "site-big-basin":       { panoId: "pano-big-basin",       image: "BigBasin001.jpg" },
-      "site-camp-jones":      { panoId: "pano-camp-jones",      image: "CJG.jpg" },
-      "site-cr-black-oak":    { panoId: "pano-cr-black-oak",    image: "CRBO.jpg" },
-      "site-cr-hollow":       { panoId: "pano-cr-hollow",       image: "CRH.jpg" },
-      "site-cotoni":          { panoId: "pano-cotoni",          image: "CCD.jpg" },
-      "site-fall-creek":      { panoId: "pano-fall-creek",      image: "FC.jpg" },
-      "site-hc-rx":           { panoId: "pano-hc-rx",           image: "HCRX.jpg" },
-      "site-mt-madonna":      { panoId: "pano-mt-madonna",      image: "MM.jpg" },
-      "site-nisene-black-oak":{ panoId: "pano-nisene-black-oak",image: "NMBO.jpg" },
-      "site-nisene-rx":       { panoId: "pano-nisene-rx",       image: "NMRX.jpg" },
-      "site-pescadero":       { panoId: "pano-pescadero",       image: "PC.jpg" },
-      "site-san-vicente":     { panoId: "pano-san-vicente",     image: "SVR.jpg" },
-      "site-soquel-demo":     { panoId: "pano-soquel-demo",     image: "SDSF.jpg" },
-      "site-ucsc":            { panoId: "pano-ucsc",            image: "UC.jpg" },
-      "site-wilder":          { panoId: "pano-wilder",          image: "WR.jpg" }
-    };
+<script>
+  // Config for each site's panorama
+  const siteConfigs = {
+    "site-big-basin":       { panoId: "pano-big-basin",       image: "BigBasin001.jpg" },
+    "site-camp-jones":      { panoId: "pano-camp-jones",      image: "CJG.jpg" },
+    "site-cr-black-oak":    { panoId: "pano-cr-black-oak",    image: "CRBO.jpg" },
+    "site-cr-hollow":       { panoId: "pano-cr-hollow",       image: "CRH.jpg" },
+    "site-cotoni":          { panoId: "pano-cotoni",          image: "CCD.jpg" },
+    "site-fall-creek":      { panoId: "pano-fall-creek",      image: "FC.jpg" },
+    "site-hc-rx":           { panoId: "pano-hc-rx",           image: "HCRX.jpg" },
+    "site-mt-madonna":      { panoId: "pano-mt-madonna",      image: "MM.jpg" },
+    "site-nisene-black-oak":{ panoId: "pano-nisene-black-oak",image: "NMBO.jpg" },
+    "site-nisene-rx":       { panoId: "pano-nisene-rx",       image: "NMRX.jpg" },
+    "site-pescadero":       { panoId: "pano-pescadero",       image: "PC.jpg" },
+    "site-san-vicente":     { panoId: "pano-san-vicente",     image: "SVR.jpg" },
+    "site-soquel-demo":     { panoId: "pano-soquel-demo",     image: "SDSF.jpg" },
+    "site-ucsc":            { panoId: "pano-ucsc",            image: "UC.jpg" },
+    "site-wilder":          { panoId: "pano-wilder",          image: "WR.jpg" }
+  };
 
-    const initialized = {};
+  const initialized = {};
 
-    function showSite(siteId) {
-      // hide all blocks
-      document.querySelectorAll('.site-block').forEach(el => el.classList.remove('active'));
+  function showSite(siteId, options = {}) {
+    const { scroll = true } = options;
 
-      const section = document.getElementById(siteId);
-      if (!section) return;
+    // hide all blocks
+    document.querySelectorAll('.site-block').forEach(el =>
+      el.classList.remove('active')
+    );
 
-      section.classList.add('active');
+    const section = document.getElementById(siteId);
+    if (!section) return;
 
-      // scroll into view
+    section.classList.add('active');
+
+    // scroll only when requested (not on initial page load)
+    if (scroll) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-      const cfg = siteConfigs[siteId];
-      if (!cfg) return;
-
-      // only create viewer the first time this site is shown
-      if (!initialized[siteId]) {
-        pannellum.viewer(cfg.panoId, {
-          "type": "equirectangular",
-          "panorama": cfg.image,
-          "autoLoad": true,
-          "autoRotate": -2,
-          "showZoomCtrl": true,
-          "compass": true
-        });
-        initialized[siteId] = true;
-      }
     }
 
-    // dropdown handler
-    document.getElementById('site-select').addEventListener('change', function () {
-      const siteId = this.value;
-      if (siteId) {
-        showSite(siteId);
-      }
-    });
+    const cfg = siteConfigs[siteId];
+    if (!cfg) return;
 
-    // initial state: show Big Basin
-    document.getElementById('site-select').value = 'site-big-basin';
-    showSite('site-big-basin');
-  </script>
+    if (!initialized[siteId]) {
+      pannellum.viewer(cfg.panoId, {
+        type: "equirectangular",
+        panorama: cfg.image,
+        autoLoad: true,
+        autoRotate: -2,
+        showZoomCtrl: true,
+        compass: true
+      });
+      initialized[siteId] = true;
+    }
+  }
+
+  // Dropdown handler
+  document.getElementById('site-select').addEventListener('change', function () {
+    const siteId = this.value;
+    if (siteId) {
+      showSite(siteId, { scroll: true });
+    }
+  });
+
+  // Initial state: show Big Basin **without scrolling**
+  document.getElementById('site-select').value = 'site-big-basin';
+  showSite('site-big-basin', { scroll: false });
+</script>
+
 
 </body>
 </html>
