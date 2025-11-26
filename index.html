@@ -173,16 +173,20 @@
     <!-- Plot map -->
     <div id="plot-map-wrap">
       <h2 style="margin: 0 0 0.25rem; font-size: 1.3rem;">
-        Monitoring Plot Locations
+        Monitoring plot locations
       </h2>
       <p class="site-meta" style="margin: 0 0 0.75rem;">
-        Each point represents a permanent 1/10-acre plot in the Santa Cruz Mountains Long-Term Forest Monitoring Program. 
-        <b> Site access and remeasurements are facilitated through individual landowners/agencies, not the Stewardship Monitoring Program. Do not attempt to access research sites without written permission and permitting from the landowner.</b>
+        Each point represents a permanent 1/10-acre plot in the Santa Cruz Mountains Long-Term Forest Monitoring Program.
       </p>
       <div id="plot-map"></div>
-      <p id="plot-map-legend">
-        Color shows whether the site has burned in the last 10 years.
-      </p>
+<p id="plot-map-legend">
+  Color distinguishes Stewardship Research Areas (sites). Click a point to see the plot ID and site.
+  Site access and remeasurements are facilitated through individual landowners/agencies, not the Stewardship Monitoring Program. 
+  <span style="color:#b30000; font-weight:600;">
+    Do not attempt to access research sites without written permission and permitting from the landowner.
+  </span>
+</p>
+
     </div>
 
     <!-- Sticky Jump Menu -->
@@ -401,11 +405,31 @@
 
   <!-- Leaflet plot map script -->
   <script>
-    function burnColor(value) {
-      const v = (value || "").toLowerCase();
-      if (v === "yes") return "#c0392b";   // burned in last 10 years
-      if (v === "no")  return "#2e86c1";   // not burned in last 10 years
-      return "#7f8c8d";                    // unknown / other
+    // simple categorical color mapping based on the "site" field
+    const SITE_COLORS = [
+      "#e41a1c",
+      "#377eb8",
+      "#4daf4a",
+      "#984ea3",
+      "#ff7f00",
+      "#a65628",
+      "#f781bf",
+      "#999999",
+      "#1f78b4",
+      "#33a02c",
+      "#6a3d9a",
+      "#b15928"
+    ];
+
+    function siteColor(site) {
+      const s = (site || "").toString().toLowerCase().trim();
+      if (!s) return "#7f8c8d";
+      let hash = 0;
+      for (let i = 0; i < s.length; i++) {
+        hash = (hash * 31 + s.charCodeAt(i)) & 0xffffffff;
+      }
+      const idx = Math.abs(hash) % SITE_COLORS.length;
+      return SITE_COLORS[idx];
     }
 
     (function initPlotMap() {
@@ -427,7 +451,7 @@
           const layer = L.geoJSON(data, {
             pointToLayer: (feature, latlng) => {
               const props = feature.properties || {};
-              const color = burnColor(props.site_burned_10yr);
+              const color = siteColor(props.site);
               return L.circleMarker(latlng, {
                 radius: 5,
                 weight: 1,
@@ -438,9 +462,11 @@
             },
             onEachFeature: (feature, layer) => {
               const p = feature.properties || {};
+              const plotName = p.plot_name || "";
+              const site = p.site || "Unknown site";
               layer.bindPopup(
-                `<strong>${p.plot_name || ""}</strong><br>` +
-                `Burned (10 yr): ${p.site_burned_10yr || "Unknown"}`
+                `<strong>${plotName}</strong><br>` +
+                `Site: ${site}`
               );
             }
           }).addTo(map);
