@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="pannellum.css"/>
   <script src="pannellum.js"></script>
 
+  <!-- Leaflet for the plot map -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
   <style>
     body {
       margin: 0;
@@ -38,6 +51,26 @@
       margin-bottom: 1.5rem;
       font-size: 1rem;
       line-height: 1.55;
+    }
+
+    /* Plot map styles */
+    #plot-map-wrap {
+      margin: 1.5rem 0 2rem;
+    }
+
+    #plot-map {
+      width: 100%;
+      height: 420px;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      background: #fff;
+    }
+
+    #plot-map-legend {
+      margin-top: 0.4rem;
+      font-size: 0.8rem;
+      color: #555;
     }
 
     /* Card style improvements */
@@ -134,8 +167,22 @@
       The SRAs form the foundation of the Santa Cruz Mountains Long-Term Forest Monitoring Program, a permanent network of 304 monitoring plots established across public, private, and working forestlands.
       All sites follow standardized data collection methods using the
       <a href="https://ucanr.edu/county/santa-cruz-county/monitoring-resources-protocols-and-gear-share" target="_blank">Regional Stewardship Trends Monitoring Protocol</a>.
-      Click and drag to look around each 360° scene; use your mouse or trackpad to zoom in and out. Click on each site page for a plot map, data summary, ecological summary, information on past and planned stewardship, and to request access to the data for use in research or planning. 
+      Click and drag to look around each 360° scene; use your mouse or trackpad to zoom in and out. Click on each site page for a plot map, data summary, ecological summary, information on past and planned stewardship, and to request access to the data for use in research or planning.
     </p>
+
+    <!-- Plot map -->
+    <div id="plot-map-wrap">
+      <h2 style="margin: 0 0 0.25rem; font-size: 1.3rem;">
+        Monitoring plot locations
+      </h2>
+      <p class="site-meta" style="margin: 0 0 0.75rem;">
+        Each point represents a permanent 1/10-acre plot in the Santa Cruz Mountains Long-Term Forest Monitoring Program.
+      </p>
+      <div id="plot-map"></div>
+      <p id="plot-map-legend">
+        Color shows whether the site has burned in the last 10 years.
+      </p>
+    </div>
 
     <!-- Sticky Jump Menu -->
     <div class="sticky-select">
@@ -179,7 +226,7 @@
       <h2 class="site-title">Camp Jones Gulch</h2>
       <p class="site-meta">28 plots - Coast redwood forest</p>
       <p class="site-desc">
-        YMCA Camp Jones Gulch plots are located in an old-growth coast redwood forest. This plot network was designed as a before-after-control impact study. 
+        YMCA Camp Jones Gulch plots are located in an old-growth coast redwood forest. This plot network was designed as a before-after-control impact study.
         Half the sites will have a forest health project implemented in the future, while half are controls. Sampling was conducted in 2025 and the site wil be resamples in 20027 following stewardship activities.
       </p>
       <div class="pano-frame">
@@ -205,7 +252,7 @@
       <h2 class="site-title">Castle Rock – Hollow</h2>
       <p class="site-meta">14 plots - Coast redwood and mixed conifer</p>
       <p class="site-desc">
-        Castle Rock Hollow is a Sempervirens Fund holding that is adjacent to Castle Rock State Park. The site is characterised as second growth with some protected remnant old-growth redwoods. 
+        Castle Rock Hollow is a Sempervirens Fund holding that is adjacent to Castle Rock State Park. The site is characterised as second growth with some protected remnant old-growth redwoods.
         14 plots were collected as baseline data to support future stewardship deicion making. The plots were destributed randomly across stands with the tallest trees on the property.
       </p>
       <div class="pano-frame">
@@ -213,7 +260,7 @@
       </div>
     </section>
 
-    <!-- ========== COTONI COAST Dairies ========== -->
+    <!-- ========== COTONI COAST DAIRIES ========== -->
     <section class="site-block" id="site-cotoni">
       <h2 class="site-title">Cotoni Coast Dairies</h2>
       <p class="site-meta">22 plots – Coast redwood forest</p>
@@ -351,6 +398,65 @@
 
   </div>
 
+  <!-- Leaflet plot map script -->
+  <script>
+    function burnColor(value) {
+      const v = (value || "").toLowerCase();
+      if (v === "yes") return "#c0392b";   // burned in last 10 years
+      if (v === "no")  return "#2e86c1";   // not burned in last 10 years
+      return "#7f8c8d";                    // unknown / other
+    }
+
+    (function initPlotMap() {
+      const mapEl = document.getElementById("plot-map");
+      if (!mapEl) return;
+
+      const map = L.map("plot-map", {
+        attributionControl: true
+      }).setView([37.1, -122.1], 9);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      fetch("data/plots.geojson")
+        .then(r => r.json())
+        .then(data => {
+          const layer = L.geoJSON(data, {
+            pointToLayer: (feature, latlng) => {
+              const props = feature.properties || {};
+              const color = burnColor(props.site_burned_10yr);
+              return L.circleMarker(latlng, {
+                radius: 5,
+                weight: 1,
+                color: "#333",
+                fillColor: color,
+                fillOpacity: 0.9
+              });
+            },
+            onEachFeature: (feature, layer) => {
+              const p = feature.properties || {};
+              layer.bindPopup(
+                `<strong>${p.plot_name || ""}</strong><br>` +
+                `Burned (10 yr): ${p.site_burned_10yr || "Unknown"}`
+              );
+            }
+          }).addTo(map);
+
+          try {
+            map.fitBounds(layer.getBounds().pad(0.2));
+          } catch (e) {
+            console.warn("Could not fit bounds for plot map:", e);
+          }
+        })
+        .catch(err => {
+          console.error("Error loading data/plots.geojson", err);
+        });
+    })();
+  </script>
+
+  <!-- Existing pannellum / site switcher script -->
   <script>
     // Config for each site's panorama
     const siteConfigs = {
